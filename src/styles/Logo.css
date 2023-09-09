@@ -1,0 +1,29 @@
+.logo{
+    width: 210px;
+    height: 68px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+.styleLettres{
+    font-family: Montserrat;
+    color: #FF6060;
+    height: 68px;
+}
+.styleLogo{
+    max-height: 62px;
+    max-width: 54px;
+    font-size:4em;
+    display: flex;
+    align-items: center;
+}
+.styleLogo2{
+
+    font-size:4.4em;
+    display: flex;
+    align-items: center;
+}
+.iconeLogo{
+    max-height: 50px;
+    width: auto;
+}
