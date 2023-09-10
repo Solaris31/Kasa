@@ -1,0 +1,10 @@
+.conteneurLocations{
+    width: 88vw;
+    height: auto;
+    background-color: #F6F6F6;
+    margin: 0 auto 35px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

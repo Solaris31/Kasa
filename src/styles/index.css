@@ -1,7 +1,25 @@
-
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../Fonts/static/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+*{
+  font-family: Montserrat, sans-serif;
+  box-sizing: border-box;
+  --rose:#FF6060;
+}
 ul{
   list-style-type: none;
 }
+a{
+  text-decoration: none;
+  color: var(--rose);
+}
+a:active, a:visited{
+  text-decoration: underline;
+}
+
 
 
 /* Header */
@@ -11,27 +29,24 @@ ul{
   justify-content: space-between;
   align-items: flex-end;
   height: 68px;
-  width: 86vw;
+  width: 88vw;
   margin: 35px auto;
-
 }
 .menuNav{
   display : flex;
   flex-direction: row;
+  justify-content: space-between;
   width: 309px;
   margin: auto 0;
   padding-left: 0;
 }
 .menuNav > li {
-  margin-left: 5vw;
-  display: flex;
-  align-items: flex-end;
+  min-width: 89px;
   height: 34px;
 }
 .format1{
   font-size: 24px;
   font-weight: 500;
   line-height: 34px;
-  letter-spacing: 0em;
   text-align: right;
 }

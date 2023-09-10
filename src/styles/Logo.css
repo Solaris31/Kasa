@@ -1,3 +1,5 @@
+
+/* Header */
 .logo{
     width: 210px;
     height: 68px;
@@ -6,9 +8,8 @@
     justify-content: space-evenly;
 }
 .styleLettres{
-    font-family: Montserrat;
-    color: #FF6060;
     height: 68px;
+    color: var(--rose);
 }
 .styleLogo{
     max-height: 62px;
@@ -18,12 +19,11 @@
     align-items: center;
 }
 .styleLogo2{
-
     font-size:4.4em;
     display: flex;
     align-items: center;
 }
 .iconeLogo{
-    max-height: 50px;
+    max-height: 42px;
     width: auto;
 }
