@@ -4,17 +4,19 @@
   font-weight: 500;
   font-style: normal;
 }
-*{
+:root{
   font-family: Montserrat, sans-serif;
   box-sizing: border-box;
   --rose:#FF6060;
+  --grisClair:#F6F6F6;
+  --noir:#000000;
+  --blanc:#FFFFFF;
 }
 ul{
   list-style-type: none;
 }
 a{
   text-decoration: none;
-  color: var(--rose);
 }
 a:active, a:visited{
   text-decoration: underline;
@@ -22,7 +24,7 @@ a:active, a:visited{
 
 
 
-/* Header */
+/* header */
 .conteneurNav{
   display: flex;
   flex-direction: row;
@@ -44,9 +46,18 @@ a:active, a:visited{
   min-width: 89px;
   height: 34px;
 }
-.format1{
+.styleNav a{
   font-size: 24px;
   font-weight: 500;
   line-height: 34px;
   text-align: right;
+  color:var(--rose);
+}
+
+
+/* conteneurLocation */
+
+/* Decalage de 40px vers le bas pour la derniere figure */
+figure:nth-last-child(1){
+  margin-bottom: 40px;
 }

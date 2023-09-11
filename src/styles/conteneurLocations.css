@@ -1,7 +1,7 @@
 .conteneurLocations{
     width: 88vw;
     height: auto;
-    background-color: #F6F6F6;
+    background-color: var(--grisClair);
     margin: 0 auto 35px;
     border-radius: 20px;
     display: flex;

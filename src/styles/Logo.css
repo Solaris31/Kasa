@@ -7,9 +7,13 @@
     align-items: flex-end;
     justify-content: space-evenly;
 }
-.styleLettres{
+.texteRose{
     height: 68px;
     color: var(--rose);
+}
+.texteBlanc{
+    height: 68px;
+    color: var(--blanc);
 }
 .styleLogo{
     max-height: 62px;

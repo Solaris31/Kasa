@@ -1,11 +1,11 @@
 .footer{
     height: 209px;
-    background-color: #000;
+    background-color: var(--noir);
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
 .footer > p {
-    color: white;
+    color: var(--blanc);
 }

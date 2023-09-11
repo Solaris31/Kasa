@@ -1,15 +1,18 @@
 import "../Styles/Logo.css";
-import IconeMaison from "../assets/kasa.png";
+import MaisonRose from "../assets/kasaRose.png";
+import MaisonBlanche from "../assets/kasaBlanc.png"
 
-const LogoSite = () => {
+const LogoSite = (props) => {
+    const couleurMaison = props.couleur === "rose" ? MaisonRose : MaisonBlanche;
+    const couleurTexte = props.couleur === "rose" ? "texteRose" : "texteBlanc";
+    
     return (
         <div className="logo">
-            <span className="styleLettres styleLogo">K</span>
-            <img src={IconeMaison} alt="Icone du site" className="iconeLogo" />
-            <span className="styleLettres styleLogo2">s</span>
-            <span className="styleLettres styleLogo2">a</span>
+            <span className={couleurTexte + " styleLogo"}>K</span>
+            <img src={couleurMaison} alt="Icone du site" className="iconeLogo" />
+            <span className={couleurTexte + " styleLogo2"}>s</span>
+            <span className={couleurTexte + " styleLogo2"}>a</span>
         </div>
     )
 }
-
 export default LogoSite;

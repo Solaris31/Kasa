@@ -8,17 +8,17 @@ const Home = () => {
     return (
         <div>
             <header className="conteneurNav">
-                <Logo />
+                <Logo couleur="rose"/>
                 <ul className="menuNav">
-                    <li className="styleLettres format1"><a href="#">Accueil</a></li>
-                    <li className="styleLettres format1"><a href="#">A Propos</a></li>
+                    <li className="styleNav"><a href="#">Accueil</a></li>
+                    <li className="styleNav"><a href="#">A Propos</a></li>
                 </ul>
             </header>
             <main>
                 <article><BandeauImage /></article>
                 <section><ConteneurLocations /></section>
             </main>
-            <footer><Footer /></footer>            
+            <footer><Footer /></footer>
         </div>
     )
 }

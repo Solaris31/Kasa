@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <section>
             <footer className="footer">
-                <Logo />
+                <Logo couleur="blanc"/>
                 <p>© 2020 Kasa. All rights reserved</p>
             </footer>
         </section>
