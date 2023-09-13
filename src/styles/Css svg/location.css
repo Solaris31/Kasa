@@ -1,0 +1,14 @@
+.conteneurLocation{
+    margin-bottom:0;
+
+    &:last-child{
+        margin-bottom: 40px;
+    }
+}
+.imageLocation{
+    width: 340px;
+    height: 340px;
+    max-height: 340px;
+    border-radius: 15px;
+    margin: 30px 0 0px;
+}

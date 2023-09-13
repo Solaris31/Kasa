@@ -9,9 +9,9 @@ const Home = () => {
         <div>
             <header className="conteneurNav">
                 <Logo couleur="rose"/>
-                <ul className="menuNav">
-                    <li className="styleNav"><a href="#">Accueil</a></li>
-                    <li className="styleNav"><a href="#">A Propos</a></li>
+                <ul className="conteneurNav__menuNav">
+                    <li className="conteneurNav__menuNav--styleNav"><a href="#">Accueil</a></li>
+                    <li className="conteneurNav__menuNav--styleNav"><a href="#">A Propos</a></li>
                 </ul>
             </header>
             <main>

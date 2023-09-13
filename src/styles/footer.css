@@ -1,11 +1,11 @@
-.footer{
-    height: 209px;
-    background-color: var(--noir);
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+.footer {
+  height: 209px;
+  background-color: var(--noir);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
-.footer > p {
-    color: var(--blanc);
-}
+.footer__txt {
+  color: var(--blanc);
+}/*# sourceMappingURL=footer.css.map */

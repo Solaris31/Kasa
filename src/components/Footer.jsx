@@ -6,7 +6,7 @@ const Footer = () => {
         <section>
             <footer className="footer">
                 <Logo couleur="blanc"/>
-                <p>© 2020 Kasa. All rights reserved</p>
+                <p className="footer__txt">© 2020 Kasa. All rights reserved</p>
             </footer>
         </section>
     )    

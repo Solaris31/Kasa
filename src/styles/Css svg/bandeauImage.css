@@ -1,0 +1,36 @@
+.conteneurImage{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+    z-index: 1;
+    background-image: url("../assets/Rivage.jpg");
+}
+.conteneurImage::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    filter:brightness(50%);
+    z-index: -1;
+}
+.conteneurImage__image{
+    width: 88vw;
+    margin: auto;
+    border-radius: 20px;
+    height: 223px;
+    object-fit:cover;
+}
+.conteneurImage__textSurImage{
+    width :705px;
+    height:68px;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 68px;
+    position:absolute;
+    color: var(--blanc);
+    text-align: center;
+    width: 85%;
+    word-wrap: break-word;
+}

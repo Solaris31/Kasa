@@ -1,10 +1,13 @@
-.conteneurLocation{
-    margin-bottom:0;
+.conteneurLocation {
+  margin-bottom: 0;
 }
-.imageLocation{
-    width: 340px;
-    height: 340px;
-    max-height: 340px;
-    border-radius: 15px;
-    margin: 30px 0 0px;
+.conteneurLocation:last-child {
+  margin-bottom: 40px;
 }
+.conteneurLocation__imageLocation {
+  width: 340px;
+  height: 340px;
+  max-height: 340px;
+  border-radius: 15px;
+  margin: 30px 0 0px;
+}/*# sourceMappingURL=location.css.map */

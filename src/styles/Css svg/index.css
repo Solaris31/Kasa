@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../Fonts/static/Montserrat-Regular.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
-:root {
+:root{
   font-family: Montserrat, sans-serif;
   box-sizing: border-box;
   --rose:#FF6060;
@@ -12,20 +12,20 @@
   --noir:#000000;
   --blanc:#FFFFFF;
 }
-
-ul {
+ul{
   list-style-type: none;
 }
-
-a {
+a{
   text-decoration: none;
 }
-a:active, aa:visited {
+a:active, a:visited{
   text-decoration: underline;
 }
 
+
+
 /* header */
-.conteneurNav {
+.conteneurNav{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -34,8 +34,8 @@ a:active, aa:visited {
   width: 88vw;
   margin: 35px auto;
 }
-.conteneurNav__menuNav {
-  display: flex;
+.conteneurNav__menuNav{
+  display : flex;
   flex-direction: row;
   justify-content: space-between;
   width: 309px;
@@ -46,10 +46,10 @@ a:active, aa:visited {
   min-width: 89px;
   height: 34px;
 }
-.conteneurNav__menuNav--styleNav a {
+.conteneurNav__menuNav--styleNav a{
   font-size: 24px;
   font-weight: 500;
   line-height: 34px;
   text-align: right;
-  color: var(--rose);
-}/*# sourceMappingURL=index.css.map */
+  color:var(--rose);
+}
