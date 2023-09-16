@@ -1,10 +1,18 @@
 import "../Styles/location.css"
 
-const location = () => {
+const Location = ({id, cover, title}) => {
     return (
-        <figure className="conteneurLocation">
-            <img src="" alt="" className="conteneurLocation__imageLocation"/>
-        </figure>
+        <div className="card">
+            <figure className="conteneurLocation">
+                <img 
+                    src={cover}
+                    alt={`Imageprincipale de l'appartement ${title}`}
+                    title={title}
+                    id={id}
+                    className="conteneurLocation__imageLocation"/>
+            </figure>
+            <p className="titreLocation">{title}</p>
+        </div>
     )
 }
-export default location;
+export default Location;

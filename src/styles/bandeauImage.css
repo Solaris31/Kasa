@@ -3,17 +3,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 35px;
-  z-index: 1;
   background-image: url("../assets/Rivage.jpg");
+  width: 88vw;
+  margin: 0 auto 35px;
 }
 .conteneurImage::before {
   content: "";
   position: absolute;
+  margin: 0 auto;
   top: 0;
   left: 0;
-  filter: brightness(50%);
-  z-index: -1;
+  width: 88vw;
+  height: 223px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
 }
 .conteneurImage__image {
   width: 88vw;
