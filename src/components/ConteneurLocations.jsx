@@ -7,7 +7,7 @@ const ConteneurLocations = () => {
     return (
         <div className="conteneurLocations">
             { Tableau.map((tab) => 
-                <Location key={tab.id} id={tab.id} cover={tab.cover} title={tab.title}/>
+                <Location key={tab.id} id={tab.id} cover={tab.cover} title={tab.title} />
             )}
         </div>
     )

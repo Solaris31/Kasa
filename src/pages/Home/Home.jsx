@@ -1,8 +1,8 @@
 import Logo from "../../components/Logo.jsx"
+import NavBar from "../../components/NavBar.jsx"
 import BandeauImage from "../../components/BandeauImage.jsx"
-import Footer from "../../components/Footer.jsx";
 import ConteneurLocations from "../../components/ConteneurLocations.jsx"
-import { NavLink } from "react-router-dom";
+import Footer from "../../components/Footer.jsx"
 
 
 const Home = () => {
@@ -10,13 +10,10 @@ const Home = () => {
         <div>
             <header className="conteneurNav">
                 <Logo couleur="rose"/>
-                <ul className="conteneurNav__menuNav">
-                    <li className="conteneurNav__menuNav--styleNav"><NavLink to="/">Accueil</NavLink></li>
-                    <li className="conteneurNav__menuNav--styleNav"><NavLink to="/A-Propos">A propos</NavLink></li>
-                </ul>
+                <NavBar />
             </header>
             <main>
-                <article><BandeauImage /></article>
+                <article><BandeauImage image="rivage" /></article>
                 <section><ConteneurLocations /></section>
             </main>
             <footer><Footer /></footer>
