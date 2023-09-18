@@ -1,0 +1,17 @@
+.collapse {
+  height: 52px;
+  width: 100%;
+  background-color: var(--rose);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.collapse .deviseKasa {
+  color: var(--blanc);
+  margin-left: 15px;
+}
+.collapse .fa-chevron-up {
+  color: var(--blanc);
+  margin-right: 15px;
+}/*# sourceMappingURL=collapse.css.map */

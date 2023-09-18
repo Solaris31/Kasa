@@ -3,6 +3,7 @@ import NavBar from "../../components/NavBar"
 import BandeauImage from "../../components/BandeauImage"
 import "../../Styles/index.css"
 import Footer from "../../components/Footer"
+import BoxCollapses from "../../components/BoxCollapses"
 
 const APropos = () => {
     return (
@@ -13,7 +14,7 @@ const APropos = () => {
             </header>
             <main>
                 <article><BandeauImage image="montagne"/></article>
-                {/* <section> XXXX </section> */}
+                <section><BoxCollapses /></section>
             </main>
             <footer>
                 <Footer />

@@ -1,0 +1,11 @@
+.boxCollapses {
+  width: 67vw;
+  min-height: 298px;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid red;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}/*# sourceMappingURL=boxCollapses.css.map */
