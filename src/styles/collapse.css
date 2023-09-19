@@ -7,11 +7,32 @@
   justify-content: space-between;
   align-items: center;
 }
-.collapse .deviseKasa {
+.collapse .devise {
   color: var(--blanc);
   margin-left: 15px;
+  font-size: 28px;
 }
 .collapse .fa-chevron-up {
   color: var(--blanc);
   margin-right: 15px;
+}
+.collapse .fa-chevron-up:hover {
+  cursor: pointer;
+}
+
+.devise__texte {
+  background: var(--grisClair);
+  margin-top: 0px;
+  border-radius: 0 0 10px 10px;
+  color: var(--rose);
+  visibility: hidden;
+  transition: all 80ms linear;
+  height: 0;
+  padding: 0;
+}
+
+.active .devise__texte {
+  visibility: visible;
+  padding: 20px;
+  height: auto;
 }/*# sourceMappingURL=collapse.css.map */

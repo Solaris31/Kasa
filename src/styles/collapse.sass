@@ -7,11 +7,30 @@
     justify-content : space-between
     align-items: center
     
-    & .deviseKasa
+    & .devise
         color : var(--blanc)
         margin-left : 15px
+        font-size : 28px
 
     & .fa-chevron-up
         color : var(--blanc)
         margin-right : 15px
+
+        &:hover
+            cursor : pointer
+
     
+.devise__texte
+    background : var(--grisClair)
+    margin-top : 0px
+    border-radius : 0 0 10px 10px
+    color : var(--rose)
+    visibility : hidden
+    transition : all 80ms linear
+    height : 0
+    padding : 0
+
+.active .devise__texte
+    visibility: visible
+    padding : 20px
+    height : auto
