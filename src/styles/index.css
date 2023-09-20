@@ -52,4 +52,8 @@ a:active, aa:visited {
   line-height: 34px;
   text-align: right;
   color: var(--rose);
+}
+.conteneurNav__menuNav--styleNav a.active {
+  padding-bottom: 0px;
+  border-bottom: 1px solid var(--rose);
 }/*# sourceMappingURL=index.css.map */

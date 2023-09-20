@@ -18,7 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "sass": "sass --watch ./src/Styles/collapse.sass:./src/Styles/collapse.css"
+    "sass": "sass --watch ./src/Styles/index.scss:./src/Styles/index.css"
   },
   "eslintConfig": {
     "extends": [

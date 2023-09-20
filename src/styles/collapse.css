@@ -15,8 +15,12 @@
 .collapse .fa-chevron-up {
   color: var(--blanc);
   margin-right: 15px;
+  transition: all 0.1s ease;
 }
-.collapse .fa-chevron-up:hover {
+.collapse .tourne {
+  transform: rotate(180deg);
+}
+.collapse .tourne:hover {
   cursor: pointer;
 }
 
