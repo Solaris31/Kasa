@@ -19,9 +19,7 @@ ul {
 
 a {
   text-decoration: none;
-}
-a:active, aa:visited {
-  text-decoration: underline;
+  color: var(--rose);
 }
 
 /* header */
@@ -51,9 +49,8 @@ a:active, aa:visited {
   font-weight: 500;
   line-height: 34px;
   text-align: right;
-  color: var(--rose);
 }
 .conteneurNav__menuNav--styleNav a.active {
   padding-bottom: 0px;
-  border-bottom: 1px solid var(--rose);
+  border-bottom: 2px solid var(--rose);
 }/*# sourceMappingURL=index.css.map */
