@@ -17,7 +17,7 @@ const PageIntrouvable = () => {
                 <NavLink to="/" className="erreurRetour">Retourner sur la page d'accueil</NavLink>
             </main>
         <Footer />
-        </div>        
+        </div>
     )
 }
 export default PageIntrouvable;

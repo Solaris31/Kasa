@@ -14,9 +14,10 @@ root.render(
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Fiche-Logement/:id" element={<FicheLogement />} />
+        {/* <Route path="/Fiche-Logement/:id" element={<FicheLogement />} /> */}
+        <Route path="/Fiche-Logement" element={<FicheLogement />} />
         <Route path="/A-Propos" element={<APropos />} />
-        <Route path="*" element={<PageIntrouvable />} />
+        {/* <Route path="*" element={<PageIntrouvable />} /> */}
       </Routes>
     </Router>
   </React.StrictMode>

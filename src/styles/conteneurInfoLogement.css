@@ -1,0 +1,85 @@
+@charset "UTF-8";
+.conteneurLogement {
+  margin-bottom: 50px;
+}
+.conteneurLogement .conteneurInformationsLogement {
+  margin-top: 50px;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between;
+  width: 88vw;
+  height: 77px;
+}
+.conteneurLogement .conteneurInformationsLogement .descriptionLogement {
+  color: var(--rose);
+  width: 850px;
+  max-width: 850px;
+  height: auto;
+  height: 51px;
+}
+.conteneurLogement .conteneurInformationsLogement .descriptionLogement .descriptionImg {
+  font-size: 36px;
+  margin: 0;
+}
+.conteneurLogement .conteneurInformationsLogement .descriptionLogement .localisationImg {
+  font-size: 18px;
+  margin: 0;
+}
+.conteneurLogement .conteneurInformationsLogement .conteneurDernierLoueur {
+  display: flex;
+  flex-direction: row;
+  width: 167px;
+  height: 77px;
+  align-items: center;
+}
+.conteneurLogement .conteneurInformationsLogement .conteneurDernierLoueur .nomDernierLoueur {
+  color: var(--rose);
+  width: auto;
+  text-align: right;
+}
+.conteneurLogement .conteneurInformationsLogement .conteneurDernierLoueur .photoDernierLoueur {
+  width: 111px;
+  height: 64px;
+  border-radius: 50%;
+  background: #C4C4C4;
+}
+.conteneurLogement .conteneurQualitésEtoiles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.conteneurLogement .conteneurQualitésEtoiles .conteneurQualites {
+  display: flex;
+  flex-direction: row;
+}
+.conteneurLogement .conteneurQualitésEtoiles .conteneurQualites .qualite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 115px;
+  height: 25px;
+  background: var(--rose);
+  border-radius: 10px;
+  font-size: 14px;
+  color: var(--blanc);
+  margin: 20px 10px 20px 0;
+}
+
+.boxCollapses {
+  display: flex;
+  flex-direction: row !important;
+  margin: 0 !important;
+  width: 88vw !important;
+  justify-content: space-between;
+  min-height: 52px !important;
+  max-height: 52px !important;
+}
+.boxCollapses .collapse {
+  width: 41vw !important;
+}
+
+.active .devise__texte {
+  width: 38.2vw !important;
+  margin-bottom: 0 !important;
+}/*# sourceMappingURL=conteneurInfoLogement.css.map */
