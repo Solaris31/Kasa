@@ -3,7 +3,7 @@ import Collapse from "./Collapse";
 
 const BoxCollapses = () => {
     return (
-        <div className="boxCollapses">
+        <div className="boxCollapsesPage2">
             <Collapse nom="Fiabilité" texte="Les annonces postées sur Kasa garantissentune fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes"/>
             <Collapse nom="Respect" texte="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entrainera une exclusion de notre plateforme"/>
             <Collapse nom="Service" texte="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entrainera une exclusion de notre plateforme"/>

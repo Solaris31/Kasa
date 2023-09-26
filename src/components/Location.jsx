@@ -8,7 +8,9 @@ const Location = ({id, cover, title}) => {
     const [idLocation, setIdLocation] = useState ("");
 
     const MajIdLocation = (e) => {
-        setIdLocation (e.target.id);
+        const newId = e.target.id;
+        setIdLocation (newId);
+        console.log(newId);
     }
 
     return (

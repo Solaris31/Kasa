@@ -64,4 +64,17 @@
   font-size: 14px;
   color: var(--blanc);
   margin: 20px 10px 20px 0;
-}/*# sourceMappingURL=conteneurInfoLogement.css.map */
+}
+
+.boxCollapses {
+  display: flex;
+  flex-direction: row !important;
+  margin: 0 !important;
+  width: 88vw !important;
+  justify-content: space-between;
+  min-height: 52px !important;
+  max-height: 52px !important;
+}
+.boxCollapses .collapse {
+  width: 41vw !important;
+}/*# sourceMappingURL=conteneurInfoLogementPage2.css.map */

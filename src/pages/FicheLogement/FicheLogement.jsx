@@ -3,8 +3,13 @@ import NavBar from "../../components/NavBar.jsx"
 import Footer from "../../components/Footer"
 import BandeauLogement from "../../components/BandeauLogement.jsx"
 import InfosLogement from "../../components/InfosLogement.jsx"
+import { useParams } from "react-router-dom"
 
 const FicheLogement = () => {
+
+    const {id} = useParams();
+    console.log(id);
+
     return (
         <div>
             <header className="conteneurNav">

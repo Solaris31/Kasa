@@ -1,7 +1,9 @@
 import Collapse from "../components/Collapse.jsx"
-import "../Styles/conteneurInfoLogement.css"
+import "../Styles/conteneurInfoLogementPage2.css"
+
 
 const ConteneurInfoLogement = () => {
+
     return (
         <div className="conteneurLogement">
             <div className="conteneurInformationsLogement">
