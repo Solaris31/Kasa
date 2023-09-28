@@ -2,11 +2,14 @@ import "../Styles/infosLogement.css"
 import ConteneurImgLogement from "../components/ConteneurImgLogement.jsx"
 import ConteneurInfoLogement from "../components/ConteneurInfoLogement.jsx"
 
-const InfosLogement = () => {
+const InfosLogement = ({logement}) => {
+console.log(logement);
+
+
     return (
         <div className="conteneurLogement">
             <ConteneurImgLogement />
-            <ConteneurInfoLogement />
+            <ConteneurInfoLogement logement={logement}/>
         </div>
     )
 }

@@ -1,34 +1,33 @@
 import Collapse from "../components/Collapse.jsx"
+import Qualites from "../components/Qualites.jsx"
 import "../Styles/conteneurInfoLogementPage2.css"
 
 
-const ConteneurInfoLogement = () => {
+const ConteneurInfoLogement = ({logement}) => {
 
     return (
         <div className="conteneurLogement">
             <div className="conteneurInformationsLogement">
                 <div className="descriptionLogement">
-                    <p className="descriptionImg">Cosy loft on the nanana</p>
-                    <p className="localisationImg">localisationImg</p>
+                    <p className="descriptionImg">{logement.title}</p>
+                    <p className="localisationImg">{logement.location}</p>
                 </div>
                 <div className="conteneurDernierLoueur">
-                    <p className="nomDernierLoueur">Alexandre Dumas</p>
-                    <div className="photoDernierLoueur"></div>
+                    <p className="nomDernierLoueur">{logement.host.name}</p>
+                    <img className="photoDernierLoueur" src={logement.host.picture} alt="Loueur de l'appartement" />
                 </div>
             </div>
             <div className="conteneurQualitésEtoiles">
                 <div className="conteneurQualites">
-                    <div className="qualite">qualité</div>
-                    <div className="qualite">qualité</div>
-                    <div className="qualite">qualité</div>
+                    <Qualites id={logement.id} tags={logement.tags}/>
                 </div>
                 <div className="conteneurEtoiles">
                     <div className="etoile">etoile</div>
                 </div>
             </div>
             <div className="boxCollapses">
-                <Collapse nom="Description" texte="texte1" />
-                <Collapse nom="Equipements" texte="texte2" />
+                <Collapse nom="Description" texte={logement.description} />
+                <Collapse nom="Equipements" texte={logement.equipments} />
             </div>
         </div>
     )

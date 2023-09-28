@@ -1,21 +1,12 @@
 import { NavLink } from "react-router-dom"
 import "../Styles/location.css"
-import { useState } from "react"
 
 
 const Location = ({id, cover, title}) => {
 
-    const [idLocation, setIdLocation] = useState ("");
-
-    const MajIdLocation = (e) => {
-        const newId = e.target.id;
-        setIdLocation (newId);
-        console.log(newId);
-    }
-
     return (
         <div className="card">
-            <NavLink to={`/Fiche-Logement/${idLocation}`}>
+            <NavLink to={`/Fiche-Logement/${id}`}>
                 <figure className="conteneurLocation">
                     <img 
                         src={cover}
@@ -23,7 +14,6 @@ const Location = ({id, cover, title}) => {
                         title={title}
                         id={id}
                         className="conteneurLocation__imageLocation"
-                        onClick={MajIdLocation}
                         />
                 </figure>
             </NavLink>

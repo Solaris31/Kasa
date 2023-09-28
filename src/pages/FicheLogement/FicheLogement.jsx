@@ -4,11 +4,13 @@ import Footer from "../../components/Footer"
 import BandeauLogement from "../../components/BandeauLogement.jsx"
 import InfosLogement from "../../components/InfosLogement.jsx"
 import { useParams } from "react-router-dom"
+import kasa from "../../assets/kasa.json"
 
 const FicheLogement = () => {
 
     const {id} = useParams();
-    console.log(id);
+    const kasaFiltre = kasa.find((logement) => logement.id === id)
+    console.log(kasaFiltre);
 
     return (
         <div>
@@ -23,7 +25,7 @@ const FicheLogement = () => {
                     </figcaption>
                 </figure>
                 <section>
-                    <InfosLogement />
+                    <InfosLogement logement={kasaFiltre} />
                 </section>
             </main>
             <Footer />

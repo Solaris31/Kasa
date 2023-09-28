@@ -12,8 +12,8 @@
 }
 .conteneurLogement .conteneurInformationsLogement .descriptionLogement {
   color: var(--rose);
-  width: 850px;
-  max-width: 850px;
+  width: 1000px;
+  max-width: 1000px;
   height: auto;
   height: 51px;
 }
@@ -38,10 +38,9 @@
   text-align: right;
 }
 .conteneurLogement .conteneurInformationsLogement .conteneurDernierLoueur .photoDernierLoueur {
-  width: 111px;
+  width: 64px;
   height: 64px;
   border-radius: 50%;
-  background: #C4C4C4;
 }
 .conteneurLogement .conteneurQualitésEtoiles {
   display: flex;
@@ -57,13 +56,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 115px;
+  width: 140px;
   height: 25px;
   background: var(--rose);
   border-radius: 10px;
   font-size: 14px;
   color: var(--blanc);
   margin: 20px 10px 20px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .boxCollapses {
@@ -77,4 +79,7 @@
 }
 .boxCollapses .collapse {
   width: 41vw !important;
+}
+.boxCollapses .active {
+  width: 41vw;
 }/*# sourceMappingURL=conteneurInfoLogementPage2.css.map */
