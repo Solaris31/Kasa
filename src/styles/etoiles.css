@@ -1,0 +1,18 @@
+.conteneurEtoiles {
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  height: 36px;
+  align-items: center;
+  justify-content: space-between;
+}
+.conteneurEtoiles.fa-star {
+  width: 36px;
+  height: 36px;
+}
+.conteneurEtoiles .rose {
+  color: var(--rose);
+}
+.conteneurEtoiles .gris {
+  color: #E3E3E3;
+}/*# sourceMappingURL=etoiles.css.map */

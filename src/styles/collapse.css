@@ -39,4 +39,7 @@
   visibility: visible;
   padding: 20px;
   height: auto;
+}
+.active .devise__texte .conteneurEquipement {
+  height: 32px;
 }/*# sourceMappingURL=collapse.css.map */

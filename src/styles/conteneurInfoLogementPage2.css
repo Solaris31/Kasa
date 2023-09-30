@@ -47,6 +47,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
 }
 .conteneurLogement .conteneurQualitésEtoiles .conteneurQualites {
   display: flex;
@@ -79,7 +80,8 @@
 }
 .boxCollapses .collapse {
   width: 41vw !important;
+  margin-right: 6vw;
 }
-.boxCollapses .active {
-  width: 41vw;
+.boxCollapses p.devise__texte {
+  width: calc(41vw - 40px);
 }/*# sourceMappingURL=conteneurInfoLogementPage2.css.map */

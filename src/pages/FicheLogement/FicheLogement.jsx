@@ -10,7 +10,6 @@ const FicheLogement = () => {
 
     const {id} = useParams();
     const kasaFiltre = kasa.find((logement) => logement.id === id)
-    console.log(kasaFiltre);
 
     return (
         <div>

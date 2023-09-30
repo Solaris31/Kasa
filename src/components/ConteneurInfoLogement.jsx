@@ -1,7 +1,7 @@
 import Collapse from "../components/Collapse.jsx"
 import Qualites from "../components/Qualites.jsx"
+import Etoiles from "../components/Etoiles.jsx"
 import "../Styles/conteneurInfoLogementPage2.css"
-
 
 const ConteneurInfoLogement = ({logement}) => {
 
@@ -21,9 +21,7 @@ const ConteneurInfoLogement = ({logement}) => {
                 <div className="conteneurQualites">
                     <Qualites id={logement.id} tags={logement.tags}/>
                 </div>
-                <div className="conteneurEtoiles">
-                    <div className="etoile">etoile</div>
-                </div>
+                <Etoiles etoiles={logement.rating}/>
             </div>
             <div className="boxCollapses">
                 <Collapse nom="Description" texte={logement.description} />

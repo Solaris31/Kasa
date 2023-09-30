@@ -3,8 +3,6 @@ import ConteneurImgLogement from "../components/ConteneurImgLogement.jsx"
 import ConteneurInfoLogement from "../components/ConteneurInfoLogement.jsx"
 
 const InfosLogement = ({logement}) => {
-console.log(logement);
-
 
     return (
         <div className="conteneurLogement">

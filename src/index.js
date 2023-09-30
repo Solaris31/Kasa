@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -19,5 +19,5 @@ root.render(
         <Route path="*" element={<PageIntrouvable />} />
       </Routes>
     </Router>
-  </React.StrictMode>
+  // </React.StrictMode>
 );
