@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .conteneurLogement {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 .conteneurLogement .conteneurInformationsLogement {
   margin-top: 50px;
@@ -36,6 +36,7 @@
   color: var(--rose);
   width: auto;
   text-align: right;
+  padding-right: 7px;
 }
 .conteneurLogement .conteneurInformationsLogement .conteneurDernierLoueur .photoDernierLoueur {
   width: 64px;

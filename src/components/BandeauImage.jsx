@@ -5,7 +5,10 @@ import montagne from "../assets/ForetEtMontagne.jpg";
 
 const BandeauImage = (props) => {
 
+    //Maj de limage selon la props passee en commentaire
     const imageBandeau = props.image === "rivage" ? rivage : montagne;
+
+    //Maj de la commentaire selon la props passee en commentaire
     const commentaire = props.image === "rivage" ? "Rivage escarpé surmonté d'arbres" : "Vallée entre foret et montagnes enneigés";
 
     return (

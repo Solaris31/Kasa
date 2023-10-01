@@ -3,7 +3,8 @@
   height: 68px;
   display: flex;
   align-items: flex-end;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  margin-left: -10px;
 }
 .logo--texteRose {
   height: 68px;

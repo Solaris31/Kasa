@@ -6,7 +6,7 @@ const InfosLogement = ({logement}) => {
 
     return (
         <div className="conteneurLogement">
-            <ConteneurImgLogement />
+            <ConteneurImgLogement logement={logement}/>
             <ConteneurInfoLogement logement={logement}/>
         </div>
     )
