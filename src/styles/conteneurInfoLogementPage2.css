@@ -1,21 +1,19 @@
-@charset "UTF-8";
 .conteneurLogement {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 .conteneurLogement .conteneurInformationsLogement {
   margin-top: 50px;
   display: flex !important;
-  flex-direction: row !important;
+  flex-direction: row;
   justify-content: space-between;
   width: 88vw;
-  height: 77px;
+  height: auto;
 }
 .conteneurLogement .conteneurInformationsLogement .descriptionLogement {
   color: var(--rose);
-  width: 1000px;
   max-width: 1000px;
   height: auto;
-  height: 51px;
+  flex-direction: column;
 }
 .conteneurLogement .conteneurInformationsLogement .descriptionLogement .descriptionImg {
   font-size: 36px;
@@ -25,36 +23,12 @@
   font-size: 18px;
   margin: 0;
 }
-.conteneurLogement .conteneurInformationsLogement .conteneurDernierLoueur {
+.conteneurLogement .conteneurInformationsLogement .descriptionLogement .conteneurQualites {
   display: flex;
   flex-direction: row;
-  width: 167px;
-  height: 77px;
-  align-items: center;
+  flex-wrap: wrap;
 }
-.conteneurLogement .conteneurInformationsLogement .conteneurDernierLoueur .nomDernierLoueur {
-  color: var(--rose);
-  width: auto;
-  text-align: right;
-  padding-right: 7px;
-}
-.conteneurLogement .conteneurInformationsLogement .conteneurDernierLoueur .photoDernierLoueur {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-}
-.conteneurLogement .conteneurQualitésEtoiles {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-}
-.conteneurLogement .conteneurQualitésEtoiles .conteneurQualites {
-  display: flex;
-  flex-direction: row;
-}
-.conteneurLogement .conteneurQualitésEtoiles .conteneurQualites .qualite {
+.conteneurLogement .conteneurInformationsLogement .descriptionLogement .qualite {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,6 +43,30 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.conteneurLogement .conteneurInformationsLogement .conteneurLoueuretEtoiles .conteneurDernierLoueur {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.conteneurLogement .conteneurInformationsLogement .conteneurLoueuretEtoiles .conteneurDernierLoueur .nomDernierLoueur {
+  color: var(--rose);
+  width: 100px;
+  padding-right: 5px;
+  text-align: end;
+}
+.conteneurLogement .conteneurInformationsLogement .conteneurLoueuretEtoiles .conteneurDernierLoueur .photoDernierLoueur {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  margin: auto 0;
+}
+.conteneurLogement .conteneurInformationsLogement .conteneurLoueuretEtoiles .conteneurEtoiles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
 
 .boxCollapses {
   display: flex;
@@ -77,12 +75,63 @@
   width: 88vw !important;
   justify-content: space-between;
   min-height: 52px !important;
-  max-height: 52px !important;
 }
 .boxCollapses .collapse {
-  width: 41vw !important;
-  margin-right: 6vw;
+  width: 41vw;
+  marging-right: 0;
 }
 .boxCollapses p.devise__texte {
   width: calc(41vw - 40px);
+}
+
+@media screen and (max-width: 900px) {
+  .conteneurInformationsLogement {
+    flex-direction: column !important;
+  }
+  .conteneurInformationsLogement .descriptionLogement .conteneurQualites .qualite {
+    margin: 10px 10px 10px 0;
+  }
+  .conteneurInformationsLogement .descriptionLogement .descriptionImg {
+    width: 88vw;
+    font-size: 30px !important;
+  }
+  .conteneurInformationsLogement .descriptionLogement .localisationImg {
+    font-size: 16px !important;
+  }
+  .conteneurInformationsLogement .conteneurLoueuretEtoiles {
+    position: relative;
+  }
+  .conteneurInformationsLogement .conteneurLoueuretEtoiles .conteneurDernierLoueur .nomDernierLoueur {
+    font-size: 12px;
+    width: 60px !important;
+  }
+  .conteneurInformationsLogement .conteneurLoueuretEtoiles .conteneurDernierLoueur .photoDernierLoueur {
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 50% !important;
+  }
+  .conteneurInformationsLogement .conteneurLoueuretEtoiles .conteneurEtoiles {
+    position: absolute;
+    top: 5px;
+  }
+  .conteneurInformationsLogement .conteneurLoueuretEtoiles .conteneurEtoiles > div {
+    transform: scale(0.6);
+    left: -40px;
+  }
+  .boxCollapses {
+    flex-direction: column !important;
+  }
+  .boxCollapses .collapse {
+    width: 88vw;
+  }
+  .boxCollapses .collapse .devise {
+    font-size: 16px !important;
+  }
+  .boxCollapses .active .devise__texte {
+    font-size: 14px !important;
+    width: calc(88vw - 40px);
+  }
+  .boxCollapses .active .devise {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=conteneurInfoLogementPage2.css.map */

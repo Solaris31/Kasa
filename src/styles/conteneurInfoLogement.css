@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .conteneurLogement {
   margin-bottom: 50px;
 }
@@ -43,17 +42,18 @@
   border-radius: 50%;
   background: #C4C4C4;
 }
-.conteneurLogement .conteneurQualitésEtoiles {
+.conteneurLogement .conteneurEtoiles {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.conteneurLogement .conteneurQualitésEtoiles .conteneurQualites {
+.conteneurLogement .conteneurEtoiles .conteneurQualites {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
-.conteneurLogement .conteneurQualitésEtoiles .conteneurQualites .qualite {
+.conteneurLogement .conteneurEtoiles .conteneurQualites .qualite {
   display: flex;
   align-items: center;
   justify-content: center;

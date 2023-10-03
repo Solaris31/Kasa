@@ -20,18 +20,19 @@
   position: absolute;
   top: 345px;
   left: 50%;
-  color: blue;
+  color: var(--blanc);
   transform: translateX(-50%);
+  font-size: 21px;
 }
 .conteneurPhotoLogement .afficheConteneur .chevronLeft {
-  width: 5%;
+  width: 4%;
   position: absolute;
   color: var(--blanc);
   top: 39%;
   left: 1%;
 }
 .conteneurPhotoLogement .afficheConteneur .chevronRight {
-  width: 5%;
+  width: 4%;
   position: absolute;
   color: var(--blanc);
   top: 39%;
@@ -39,4 +40,23 @@
 }
 .conteneurPhotoLogement .cacheConteneur {
   visibility: hidden;
-}/*# sourceMappingURL=ConteneurImgLogement.css.map */
+}
+
+@media screen and (max-width: 900px) {
+  .conteneurPhotoLogement {
+    height: 255px;
+  }
+  .conteneurPhotoLogement .imgLogement {
+    height: 100%;
+  }
+  .conteneurPhotoLogement .afficheConteneur .chevronLeft {
+    top: 45%;
+  }
+  .conteneurPhotoLogement .afficheConteneur .chevronRight {
+    top: 45%;
+  }
+  .conteneurPhotoLogement .afficheConteneur .nbPhotos {
+    top: 200px;
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=conteneurImgLogement.css.map */

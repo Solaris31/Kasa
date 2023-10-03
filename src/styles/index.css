@@ -37,7 +37,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 309px;
+  width: 240px;
   margin: auto 0;
   padding-left: 0;
 }
@@ -54,4 +54,15 @@ a {
 }
 .conteneurNav__menuNav--styleNav a.active {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+  .conteneurNav__menuNav {
+    width: 180px;
+    margin-bottom: 10px;
+  }
+  .conteneurNav__menuNav--styleNav a {
+    text-transform: uppercase;
+    font-size: smaller;
+  }
 }/*# sourceMappingURL=index.css.map */

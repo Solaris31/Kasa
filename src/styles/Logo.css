@@ -1,9 +1,8 @@
 .logo {
-  width: 210px;
+  width: 185px;
   height: 68px;
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
   margin-left: -10px;
 }
 .logo--texteRose {
@@ -29,4 +28,11 @@
 .logo__iconeLogo {
   max-height: 42px;
   width: auto;
+}
+
+@media screen and (max-width: 900px) {
+  .logo {
+    transform: scale(0.6);
+    margin-left: -40px;
+  }
 }/*# sourceMappingURL=logo.css.map */

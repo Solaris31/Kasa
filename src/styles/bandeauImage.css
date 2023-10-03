@@ -35,5 +35,25 @@
   position: absolute;
   color: var(--blanc);
   text-align: center;
-  width: 85%;
+  width: 82%;
+}
+
+@media screen and (max-width: 900px) {
+  .conteneurImage {
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+  .conteneurImage::before {
+    height: 111px;
+  }
+  .conteneurImage__image {
+    height: 111px;
+  }
+  .conteneurImage__textSurImage {
+    font-size: 35px;
+    text-align: start;
+    margin-left: 20px;
+    font-size: 30px;
+    line-height: initial;
+  }
 }/*# sourceMappingURL=bandeauImage.css.map */

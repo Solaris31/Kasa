@@ -24,7 +24,6 @@
         border-radius: 20px
         height: 223px
         object-fit: cover
-    
 
     &__textSurImage
         width : 705px
@@ -35,4 +34,23 @@
         position: absolute
         color: var(--blanc)
         text-align: center
-        width: 85%
+        width: 82%
+
+
+@media screen and (max-width: 900px)
+    .conteneurImage
+        justify-content: flex-start
+        margin-bottom: 20px
+
+        &::before
+            height: 111px
+
+        &__image
+            height: 111px
+
+        &__textSurImage
+            font-size: 35px
+            text-align: start
+            margin-left: 20px
+            font-size: 30px
+            line-height: initial

@@ -8,4 +8,18 @@
 }
 .footer__txt {
   color: var(--blanc);
+}
+
+@media screen and (max-width: 900px) {
+  .footer {
+    height: 209px;
+    justify-content: center;
+  }
+  .footer .logo {
+    margin: 0 auto;
+  }
+  .footer .footer__txt {
+    width: 210px;
+    text-align: center;
+  }
 }/*# sourceMappingURL=footer.css.map */

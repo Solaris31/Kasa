@@ -6,7 +6,7 @@ const Location = ({id, cover, title}) => {
 
     return (
         <div className="card">
-            <NavLink to={`/Fiche-Logement/${id}`}>
+            <NavLink to={`/FicheLogement/${id}`}>
                 <figure className="conteneurLocation">
                     <img 
                         src={cover}
@@ -16,8 +16,9 @@ const Location = ({id, cover, title}) => {
                         className="conteneurLocation__imageLocation"
                         />
                 </figure>
+                <p className="titreLocation">{title}</p>
             </NavLink>
-            <p className="titreLocation">{title}</p>
+
         </div>
     )
 }

@@ -19,11 +19,12 @@
             position: absolute
             top: 345px
             left: 50%
-            color: blue
+            color: var(--blanc)
             transform: translateX(-50%)
+            font-size: 21px
 
         & .chevronLeft
-            width: 5%
+            width: 4%
             position: absolute
             color: var(--blanc)
             top: 39%
@@ -31,7 +32,7 @@
 
         
         & .chevronRight
-            width: 5%
+            width: 4%
             position: absolute
             color: var(--blanc)
             top: 39%
@@ -39,3 +40,23 @@
 
     & .cacheConteneur
         visibility: hidden
+
+
+@media screen and (max-width: 900px)
+    .conteneurPhotoLogement
+        height: 255px
+        
+        & .imgLogement
+            height: 100%
+
+        & .afficheConteneur
+
+            & .chevronLeft
+                top: 45%
+
+            & .chevronRight
+                top: 45%
+        
+            & .nbPhotos
+                top: 200px
+                font-size: 12px

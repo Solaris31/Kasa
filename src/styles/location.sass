@@ -23,7 +23,7 @@
 .card
     position: relative
     &:last-child
-        margin-bottom: 50px
+        margin-bottom: 55px
     
 
 .titreLocation
@@ -35,3 +35,29 @@
     font-weight: 500
     font-size: 18px
     line-height: 25.5px
+
+
+@media screen and (max-width: 900px)
+    .conteneurLocations
+
+        & .card
+            &:last-child
+            margin-bottom: 55px
+        
+            & a
+
+                & .conteneurLocation
+                    margin: 0
+
+                    &::before
+                        width: 88vw
+                        height: 255px
+                        margin-bottom: 20px
+
+                    &__imageLocation
+                        width: 88vw
+                        height: 255px
+                        margin-bottom: 20px
+
+                & .titreLocation
+                    top: 175px

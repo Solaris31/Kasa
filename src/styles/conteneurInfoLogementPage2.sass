@@ -1,22 +1,20 @@
 
 .conteneurLogement
-    margin-bottom: 25px
+    margin-bottom: 15px
 
     & .conteneurInformationsLogement
         margin-top: 50px
         display: flex !important
-        flex-direction: row !important
+        flex-direction: row
         justify-content: space-between
         width: 88vw
-        height: 77px
-
+        height: auto
 
         & .descriptionLogement
             color: var(--rose)
-            width: 1000px
             max-width: 1000px
             height: auto
-            height: 51px
+            flex-direction: column
 
             & .descriptionImg
                 font-size: 36px
@@ -26,35 +24,10 @@
                 font-size: 18px
                 margin: 0
 
-        & .conteneurDernierLoueur
-            display: flex
-            flex-direction: row
-            width: 167px
-            height: 77px
-            align-items: center
-
-            & .nomDernierLoueur
-                color: var(--rose)
-                width: auto
-                text-align: right
-                padding-right: 7px
-
-            & .photoDernierLoueur
-                width: 64px 
-                height: 64px
-                border-radius: 50%
-
-
-    .conteneurQualitésEtoiles
-        display: flex
-        flex-direction: row
-        justify-content: space-between
-        align-items: center
-        margin-bottom: 10px
-        
-        & .conteneurQualites
-            display: flex
-            flex-direction: row
+            & .conteneurQualites
+                display: flex
+                flex-direction: row
+                flex-wrap: wrap
 
             & .qualite
                 display: flex
@@ -71,6 +44,33 @@
                 overflow: hidden
                 text-overflow: ellipsis
 
+        & .conteneurLoueuretEtoiles
+
+            & .conteneurDernierLoueur
+                display: flex
+                flex-direction: row
+                justify-content: flex-end
+
+                & .nomDernierLoueur
+                    color: var(--rose)
+                    width: 100px
+                    padding-right: 5px
+                    text-align: end
+
+                & .photoDernierLoueur
+                    height: 64px
+                    width: 64px
+                    border-radius: 50%
+                    margin: auto 0
+
+            & .conteneurEtoiles
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+                align-items: center
+                margin-bottom: 10px
+
+
 .boxCollapses
     display: flex
     flex-direction: row !important
@@ -78,11 +78,72 @@
     width: 88vw !important
     justify-content: space-between
     min-height: 52px !important
-    max-height: 52px !important
 
     & .collapse
-        width : 41vw !important
-        margin-right: 6vw
+        width: 41vw
+        marging-right: 0
 
     & p.devise__texte
         width: calc(41vw - 40px)
+
+
+
+@media screen and (max-width: 900px)
+    .conteneurInformationsLogement
+        flex-direction: column !important
+
+        & .descriptionLogement
+
+            & .conteneurQualites
+
+                & .qualite
+                    margin: 10px 10px 10px 0
+
+            & .descriptionImg
+                width: 88vw
+                font-size: 30px !important
+            
+            & .localisationImg
+                font-size: 16px !important
+
+        & .conteneurLoueuretEtoiles
+            position: relative
+
+            & .conteneurDernierLoueur
+
+                & .nomDernierLoueur
+                    font-size: 12px
+                    width: 60px !important
+
+                & .photoDernierLoueur
+                    width: 32px !important
+                    height: 32px !important
+                    border-radius: 50% !important
+
+
+            & .conteneurEtoiles
+                position: absolute
+                top: 5px
+
+                &>div
+                    transform: scale(0.6)
+                    left: -40px
+                        
+
+    .boxCollapses
+        flex-direction: column !important
+
+        & .collapse
+            width: 88vw
+
+            & .devise
+                font-size: 16px !important
+
+        & .active
+
+            & .devise__texte
+                font-size: 14px !important
+                width: calc( 88vw - 40px )
+
+            & .devise
+                font-size: 14px

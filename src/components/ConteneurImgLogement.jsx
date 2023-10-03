@@ -14,10 +14,10 @@ const ConteneurImgLogement = (props) => {
         else setImgActive(imgActive-1)
     }
 
-    // Au click, Maj du compteur d'image mais lempeche de depasser la quantité max de photos
+
+    // Au click, on verifie que props.logement.picture != "undefined" et on verifie que la valeur de limage en cours est < a la taille du tableau 
     const imgSuivante= () => {
-        if(imgActive === props.logement.pictures.length) {}
-        else setImgActive(imgActive+1)
+        if((props.logement.pictures) && imgActive < props.logement.pictures.length) {setImgActive(imgActive+1)}
     }
 
     return (

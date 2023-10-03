@@ -29,7 +29,7 @@
   position: relative;
 }
 .card:last-child {
-  margin-bottom: 50px;
+  margin-bottom: 55px;
 }
 
 .titreLocation {
@@ -41,4 +41,26 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 25.5px;
+}
+
+@media screen and (max-width: 900px) {
+  .conteneurLocations .card {
+    margin-bottom: 55px;
+  }
+  .conteneurLocations .card a .conteneurLocation {
+    margin: 0;
+  }
+  .conteneurLocations .card a .conteneurLocation::before {
+    width: 88vw;
+    height: 255px;
+    margin-bottom: 20px;
+  }
+  .conteneurLocations .card a .conteneurLocation__imageLocation {
+    width: 88vw;
+    height: 255px;
+    margin-bottom: 20px;
+  }
+  .conteneurLocations .card a .titreLocation {
+    top: 175px;
+  }
 }/*# sourceMappingURL=location.css.map */

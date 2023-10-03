@@ -5,13 +5,18 @@ import InfosLogement from "../../components/InfosLogement.jsx"
 import { useParams } from "react-router-dom"
 import kasa from "../../assets/kasa.json"
 
+
+
 const FicheLogement = () => {
 
     const {id} = useParams();
-    const kasaFiltre = kasa.find((logement) => logement.id === id)
+    const kasaFiltre = kasa.find((logement) =>
+    logement.id === id)
+
+    console.log(kasaFiltre)
 
     return (
-        <div>
+        <div className="conteneurPage">
             <header className="conteneurNav">
                 <Logo couleur="rose" />
                 <NavBar />

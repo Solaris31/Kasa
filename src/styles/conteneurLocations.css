@@ -8,4 +8,14 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .conteneurLocations {
+    background-color: var(--blanc);
+    margin: 20px auto 0;
+  }
+  .conteneurLocations .card {
+    margin-bottom: 0;
+  }
 }/*# sourceMappingURL=conteneurLocations.css.map */
