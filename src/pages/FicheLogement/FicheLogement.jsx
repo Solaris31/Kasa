@@ -4,7 +4,7 @@ import Footer from "../../components/Footer"
 import InfosLogement from "../../components/InfosLogement.jsx"
 import { useParams } from "react-router-dom"
 import kasa from "../../assets/kasa.json"
-
+import PageIntrouvable from "../PageIntrouvable/PageIntrouvable.jsx"
 
 
 const FicheLogement = () => {
@@ -13,7 +13,7 @@ const FicheLogement = () => {
     const kasaFiltre = kasa.find((logement) =>
     logement.id === id)
 
-    console.log(kasaFiltre)
+    if(!kasaFiltre) {return <PageIntrouvable />}
 
     return (
         <div className="conteneurPage">

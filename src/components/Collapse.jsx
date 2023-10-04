@@ -11,10 +11,10 @@ const Collapse = ({nom, texte}) => {
     let listeEquipements
     if (nom==="Equipements") {
         listeEquipements = texte.map((equipement, index) => (
-            <div key={index} className="conteneurEquipement">
-                <div>{equipement}</div>
+            <ul key={index} className="conteneurEquipement">
+                <li>{equipement}</li>
                 <br />
-            </div>
+            </ul>
         ))
     }
 
@@ -25,10 +25,9 @@ const Collapse = ({nom, texte}) => {
                 <i className={`fa-solid fa-chevron-up fa-xl ${ouvert && "tourne"}`} onClick={ouvertFerme}></i>
             </div>
             <div className={`${ouvert && "active"}`}>
-                <p className="devise__texte">{nom==="Equipements" ? listeEquipements : texte}</p>
+                <div className="devise__texte">{nom==="Equipements" ? listeEquipements : texte}</div>
             </div>
         </div>
-
     )
 }
 export default Collapse;

@@ -14,11 +14,11 @@ const ConteneurImgLogement = (props) => {
         else setImgActive(imgActive-1)
     }
 
-
     // Au click, on verifie que props.logement.picture != "undefined" et on verifie que la valeur de limage en cours est < a la taille du tableau 
     const imgSuivante= () => {
         if((props.logement.pictures) && imgActive < props.logement.pictures.length) {setImgActive(imgActive+1)}
     }
+
 
     return (
         <div className="conteneurPhotoLogement">

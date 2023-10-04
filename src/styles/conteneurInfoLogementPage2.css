@@ -78,7 +78,7 @@
 }
 .boxCollapses .collapse {
   width: 41vw;
-  marging-right: 0;
+  margin-right: 0;
 }
 .boxCollapses p.devise__texte {
   width: calc(41vw - 40px);
@@ -123,13 +123,17 @@
   }
   .boxCollapses .collapse {
     width: 88vw;
+    margin-top: 20px;
   }
   .boxCollapses .collapse .devise {
     font-size: 16px !important;
   }
+  .boxCollapses .active {
+    width: 88vw !important;
+  }
   .boxCollapses .active .devise__texte {
     font-size: 14px !important;
-    width: calc(88vw - 40px);
+    width: calc(88vw - 40px) !important;
   }
   .boxCollapses .active .devise {
     font-size: 14px;
