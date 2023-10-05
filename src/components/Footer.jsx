@@ -1,4 +1,4 @@
-import "../Styles/footer.css"
+import "../styles/footer.css"
 import Logo from "../components/Logo.jsx"
 
 const Footer = () => {

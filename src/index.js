@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './Styles/index.css';
+import './styles/index.css';
 import Home from './pages/Home/Home.jsx';
 import FicheLogement from './pages/FicheLogement/FicheLogement.jsx';
 import APropos from './pages/A-Propos/A-Propos.jsx';

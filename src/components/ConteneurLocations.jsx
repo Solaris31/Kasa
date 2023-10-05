@@ -1,5 +1,5 @@
 import Location from "../components/Location.jsx"
-import "../Styles/conteneurLocations.css"
+import "../styles/conteneurLocations.css"
 import Tableau from "../assets/kasa"
 
 

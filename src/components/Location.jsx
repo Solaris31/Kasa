@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom"
-import "../Styles/location.css"
+import "../styles/location.css"
 
 
 const Location = ({id, cover, title}) => {

@@ -1,7 +1,7 @@
 import Logo from "../../components/Logo"
 import NavBar from "../../components/NavBar"
 import BandeauImage from "../../components/BandeauImage"
-import "../../Styles/index.css"
+import "../../styles/index.css"
 import Footer from "../../components/Footer"
 import BoxCollapses from "../../components/BoxCollapses"
 

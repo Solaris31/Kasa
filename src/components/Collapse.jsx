@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../Styles/collapse.css"
+import "../styles/collapse.css"
 
 const Collapse = ({nom, texte}) => {
 
@@ -19,13 +19,14 @@ const Collapse = ({nom, texte}) => {
     }
 
     return (
-        <div>
+        <div className="conteneur1Collapse">
             <div className="collapse">
                 <p className="devise">{nom}</p>
                 <i className={`fa-solid fa-chevron-up fa-xl ${ouvert && "tourne"}`} onClick={ouvertFerme}></i>
             </div>
             <div className={`${ouvert && "active"}`}>
-                <div className="devise__texte">{nom==="Equipements" ? listeEquipements : texte}</div>
+                <div className={`${nom==="Fiabilité" || nom==="Respect" || nom==="Service" || nom==="Sécurité" ? "texteAPropos" : "devise__texte"}`}>
+                    {nom==="Equipements" ? listeEquipements : texte}</div>
             </div>
         </div>
     )

@@ -1,4 +1,4 @@
-import "../Styles/etoiles.css"
+import "../styles/etoiles.css"
 
 const Etoiles = (props) => {
 

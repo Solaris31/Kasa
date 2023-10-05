@@ -1,46 +1,76 @@
-.collapse
-    height: 52px
-    width: 100%
-    background-color : var(--rose)
-    border-radius : 10px
-    display : flex
-    justify-content : space-between
-    align-items: center
+.conteneur1Collapse
+    margin-bottom: 20px
 
-    
-    & .devise
-        color : var(--blanc)
-        margin-left : 15px
-        font-size : 28px
+    & .collapse
+        height: 52px
+        width: 100%
+        background-color : var(--rose)
+        border-radius : 10px
+        display : flex
+        justify-content : space-between
+        align-items: center
 
-    & .fa-chevron-up
-        color : var(--blanc)
-        margin-right : 15px
-        transition : all 0.1s ease
-    
-    & .tourne
-        transform : rotate(180deg)
+        
+        & .devise
+            color : var(--blanc)
+            margin-left : 15px
+            font-size : 28px
 
-        &:hover
-            cursor : pointer
-    
-.devise__texte
-    background : var(--grisClair)
-    margin-top : 0px
-    border-radius : 0 0 10px 10px
-    color : var(--rose)
-    visibility : hidden
-    transition : all 50ms linear
-    height : 0
-    padding : 0
-    width: calc( 41vw - 40px)
+        & .fa-chevron-up
+            color : var(--blanc)
+            margin-right : 15px
+            transition : all 0.1s ease
+        
+        & .tourne
+            transform : rotate(180deg)
 
-.active .devise__texte
-    visibility: visible
-    padding : 20px
-    height : auto
-    width: calc( 41vw - 40px)
+            &:hover
+                cursor : pointer
+        
+    & .devise__texte
+        background : var(--grisClair)
+        margin-top : 0px
+        border-radius : 0 0 10px 10px
+        color : var(--rose)
+        visibility : hidden
+        transition : all 50ms linear
+        height : 0
+        padding : 0
+        width: calc( 41vw - 40px)
 
-    & .conteneurEquipement
-        height: 16px
-        padding-left: 0
+    & .active .devise__texte
+        visibility: visible
+        padding : 20px
+        height : auto
+        width: calc( 41vw - 40px)
+
+        & .conteneurEquipement
+            height: 16px
+            padding-left: 0
+
+    & .false .texteAPropos
+        background : var(--grisClair)
+        margin-top : 0px
+        border-radius : 0 0 10px 10px
+        color : var(--rose)
+        visibility : hidden
+        transition : all 50ms linear
+        height : 0
+        padding : 0
+
+    & .active .texteAPropos
+        visibility: visible
+        background : var(--grisClair)
+        padding : 20px
+        height : auto
+        width: calc(67vw - 40px)
+        color : var(--rose)
+        border-radius: 0 0 10px 10px
+
+
+@media screen and (max-width: 900px)
+    .boxCollapsesPage2
+        width: 88vw !important
+
+        .texteAPropos
+            width: calc(88vw - 40px) !important

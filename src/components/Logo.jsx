@@ -1,4 +1,4 @@
-import "../Styles/logo.css";
+import "../styles/logo.css";
 import MaisonRose from "../assets/kasaRose.png";
 import MaisonBlanche from "../assets/kasaBlanc.png"
 

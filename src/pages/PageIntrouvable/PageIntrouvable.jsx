@@ -1,7 +1,7 @@
 import Logo from "../../components/Logo.jsx"
 import Navbar from "../../components/NavBar.jsx"
 import Footer from "../../components/Footer.jsx"
-import "../../Styles/pageIntrouvable.css"
+import "../../styles/pageIntrouvable.css"
 import { NavLink } from "react-router-dom"
 
 const PageIntrouvable = () => {

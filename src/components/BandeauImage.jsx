@@ -1,4 +1,4 @@
-import "../Styles/bandeauImage.css";
+import "../styles/bandeauImage.css";
 import rivage from "../assets/Rivage.jpg";
 import montagne from "../assets/ForetEtMontagne.jpg";
 

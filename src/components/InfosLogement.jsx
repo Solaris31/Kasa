@@ -1,4 +1,4 @@
-import "../Styles/infosLogement.css"
+import "../styles/infosLogement.css"
 import ConteneurImgLogement from "../components/ConteneurImgLogement.jsx"
 import ConteneurInfoLogement from "../components/ConteneurInfoLogement.jsx"
 

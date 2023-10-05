@@ -1,4 +1,4 @@
-import "../Styles/conteneurInfoLogementPage2.css"
+import "../styles/conteneurInfoLogementPage2.css"
 
 const Qualites = ({id, tags}) => {
 

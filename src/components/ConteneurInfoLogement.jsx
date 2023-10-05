@@ -1,7 +1,7 @@
 import Collapse from "../components/Collapse.jsx"
 import Qualites from "../components/Qualites.jsx"
 import Etoiles from "../components/Etoiles.jsx"
-import "../Styles/conteneurInfoLogementPage2.css"
+import "../styles/conteneurInfoLogementPage2.css"
 
 const ConteneurInfoLogement = ({logement}) => {
 

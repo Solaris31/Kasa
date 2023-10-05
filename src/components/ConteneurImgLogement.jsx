@@ -1,5 +1,5 @@
 import { useState } from "react"
-import "../Styles/conteneurImgLogement.css"
+import "../styles/conteneurImgLogement.css"
 import chevronDroit from "../assets/chevronVersLaDroite.png"
 import chevronGauche from "../assets/chevronVersLaGauche.png"
 
