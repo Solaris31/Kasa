@@ -13,7 +13,7 @@
 @media screen and (max-width: 900px) {
   .conteneurLocations {
     background-color: var(--blanc);
-    margin: 20px auto 0;
+    margin: 0 auto;
   }
   .conteneurLocations .card {
     margin-bottom: 0;

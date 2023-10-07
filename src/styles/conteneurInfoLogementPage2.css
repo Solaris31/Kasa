@@ -120,10 +120,20 @@
   }
   .boxCollapses {
     flex-direction: column !important;
+    margin-bottom: 20px !important;
+  }
+  .boxCollapses .conteneur1Collapse {
+    margin-top: 20px;
+    margin-bottom: 0 !important;
+  }
+  .boxCollapses .conteneur1Collapse:nth-child(2) {
+    margin-bottom: -20px !important;
+  }
+  .boxCollapses .conteneur1Collapse:nth-child(2) .active {
+    margin-bottom: 20px;
   }
   .boxCollapses .collapse {
     width: 88vw;
-    margin-top: 20px;
   }
   .boxCollapses .collapse .devise {
     font-size: 16px !important;

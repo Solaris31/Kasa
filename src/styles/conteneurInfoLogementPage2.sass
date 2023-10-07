@@ -132,13 +132,24 @@
 
     .boxCollapses
         flex-direction: column !important
+        margin-bottom: 20px !important
+
+        & .conteneur1Collapse
+            margin-top: 20px
+            margin-bottom: 0 !important
+
+            &:nth-child(2)
+                margin-bottom: -20px !important
+
+                & .active
+                     margin-bottom: 20px
 
         & .collapse
             width: 88vw
-            margin-top: 20px
 
             & .devise
                 font-size: 16px !important
+            
 
         & .active
             width: 88vw !important
