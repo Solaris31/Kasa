@@ -5,6 +5,7 @@ import "../styles/location.css"
 const Location = ({id, cover, title}) => {
 
     return (
+        // Creation dun conteneur dun logement, et avec Navlink, il sera clicable pour acceder au logement
         <div className="card">
             <NavLink to={`/FicheLogement/${id}`}>
                 <figure className="conteneurLocation">
@@ -18,7 +19,6 @@ const Location = ({id, cover, title}) => {
                 </figure>
                 <p className="titreLocation">{title}</p>
             </NavLink>
-
         </div>
     )
 }

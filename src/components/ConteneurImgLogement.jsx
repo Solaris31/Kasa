@@ -25,6 +25,7 @@ const ConteneurImgLogement = (props) => {
             {/* Affiche limage en cours (imgActive), par default elle est definie a 1 */}
             <img className="imgLogement" src={props.logement.pictures[imgActive-1]} alt="Appartement actuellement affichée" />
             <div className={props.logement.pictures.length === 1 ? "cacheConteneur" : "afficheConteneur" }>
+                {/* Au click sur les fleches, on charge la fonction imgPrecedente ou imgSuivante qui affiche la nouvelle image */}
                 <img className="chevronLeft fa-beat" src={chevronGauche} alt="Chevron d'access au cliché precedent" onClick ={imgPrecedente} />
                 <img className="chevronRight fa-beat" src={chevronDroit} alt="Chevron d'access au cliché suivant" onClick={imgSuivante} />
                 <p className="nbPhotos">{imgActive}/{props.logement.pictures.length}</p>

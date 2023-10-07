@@ -3,6 +3,7 @@ import MaisonRose from "../assets/kasaRose.png";
 import MaisonBlanche from "../assets/kasaBlanc.png"
 
 const LogoSite = (props) => {
+    // selon la props, on accorde une couleur a la maison du logo et son texte
     const couleurMaison = props.couleur === "rose" ? MaisonRose : MaisonBlanche;
     const couleurTexte = props.couleur === "rose" ? "logo--texteRose" : "logo--texteBlanc";
 

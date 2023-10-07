@@ -14,6 +14,7 @@ root.render(
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
+        {/* On passe en parametre un id d'un logement */}
         <Route path="/FicheLogement/:id" element={<FicheLogement />} />
         <Route path="/A-Propos" element={<APropos />} />
         <Route path="*" element={<PageIntrouvable />} />
