@@ -6,17 +6,19 @@ import chevronGauche from "../assets/chevronVersLaGauche.png"
 
 const ConteneurImgLogement = (props) => {
 
-    const [imgActive, setImgActive] = useState(1)
+let [imgActive, setImgActive] = useState(1)
 
-    // Au click, Maj du compteur d'image mais lempeche de descendre en dessous de 1
+
+    // Au click, Maj du compteur d'image qui remet le compteur a max du nombre de photos de la galerie
     const imgPrecedente= () => {
-        if(imgActive === 1) {}
+        if(imgActive < 2 ) {setImgActive(imgActive=(props.logement.pictures.length))}
         else setImgActive(imgActive-1)
     }
 
     // Au click, on verifie que props.logement.picture != "undefined" et on verifie que la valeur de limage en cours est < a la taille du tableau 
     const imgSuivante= () => {
         if((props.logement.pictures) && imgActive < props.logement.pictures.length) {setImgActive(imgActive+1)}
+        else {setImgActive(imgActive=1)}
     }
 
 
