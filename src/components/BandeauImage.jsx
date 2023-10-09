@@ -14,7 +14,7 @@ const BandeauImage = (props) => {
     return (
         <figure className="conteneurImage">
             <img src={imageBandeau} alt={commentaire} className="conteneurImage__image" />
-            <p className="conteneurImage__textSurImage">Chez vous, partout et ailleurs</p>
+            <p className={imageBandeau === rivage ? "conteneurImage__textSurImage" : "conteneurImage__cacherTexte"}>Chez vous, partout et ailleurs</p>
         </figure>
     )
 }
